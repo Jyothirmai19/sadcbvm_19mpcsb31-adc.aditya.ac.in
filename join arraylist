@@ -1,0 +1,25 @@
+import java.util.*;
+class joinarraylist
+{
+ public static void main(String args[])
+{
+ArrayList<Integer>a1=new
+ArrayList<Integer>();
+a1.add(30);
+a1.add(90);
+a1.add(20);
+System.out.println("list of first array: " + a1);
+ArrayList<Integer>a2=new
+ArrayList<Integer>();
+a2.add(40);
+a2.add(80);
+a2.add(60);
+System.out.println("list of second array: " + a2);
+a1.addAll(a2);
+
+System.out.println("new Array: " + a1);
+void sort_ArrayList_Desc(ArrayList<Integer>a1)
+
+System.out.println(Collections.sort(a1));
+}
+}
