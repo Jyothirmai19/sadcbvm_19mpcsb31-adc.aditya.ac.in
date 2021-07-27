@@ -1,0 +1,28 @@
+import java.util.*;
+class prime_count
+{
+public static boolean isPrime(List<Long>primes,long number)
+{
+if(number < 2) return false;
+for(Long prime:primes)
+{
+if(number % prime ==0) return false;
+}
+return true;
+}
+public static void main(String[] args)
+{
+List<Long> primes=new ArrayList<>();
+long max=100;
+long num=2;
+while(num<max)
+{
+if(isPrime(primes,num))
+{
+primes.add(num);
+}
+System.out.println("count:" + primes.size());
+System.out.println("primes:" + primes);
+}
+}
+
